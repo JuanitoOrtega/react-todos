@@ -11,3 +11,10 @@ npm start
 
 # Para hacer el deploy en gh pages instalamos la siguiente librería en modo desarrollador
 npm install --save-dev gh-pages
+
+-- Añadimos los siguientes scripts:
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+
+# Ejecutamos
+npm run deploy
